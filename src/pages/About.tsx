@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Star, Leaf, DollarSign, Clock, CheckCircle, Award } from "lucide-react";
+import ownerImage from "@/assets/mlf-owner.webp";
 
 const values = [
   { icon: Shield, label: "Fully insured and ABN registered" },
@@ -24,25 +25,41 @@ const About = () => (
       </div>
     </section>
 
+    {/* Owner section with image */}
     <section className="py-24 px-4">
-      <div className="container mx-auto max-w-3xl">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="space-y-6 text-foreground/80 text-sm leading-relaxed"
-        >
-          <p>
-            At MLF Professional Services, we believe every home and business deserves a space that feels fresh, organised, and truly cared for — and we take pride in creating that experience for our clients across Western Sydney.
-          </p>
-          <p>
-            We specialise in high‑quality residential, commercial, and end‑of‑lease cleaning, with every service carried out with precision, respect, and a commitment to excellence. Our team is trained to notice the details others overlook, ensuring every clean reflects the highest standard of quality.
-          </p>
-          <p>
-            At MLF Professional Services, we don't just clean — we elevate your space. Our goal is to provide a seamless, stress‑free experience that leaves your home or business looking immaculate and feeling refreshed, every time.
-          </p>
-        </motion.div>
+      <div className="container mx-auto max-w-5xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="md:w-2/5 shrink-0"
+          >
+            <div className="relative rounded-lg overflow-hidden shadow-gold">
+              <img src={ownerImage} alt="MLF Professional Services founder" className="w-full h-auto object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="md:w-3/5 space-y-6 text-foreground/80 text-sm leading-relaxed"
+          >
+            <p>
+              At MLF Professional Services, we believe every home and business deserves a space that feels fresh, organised, and truly cared for — and we take pride in creating that experience for our clients across Western Sydney.
+            </p>
+            <p>
+              We specialise in high‑quality residential, commercial, and end‑of‑lease cleaning, with every service carried out with precision, respect, and a commitment to excellence. Our team is trained to notice the details others overlook, ensuring every clean reflects the highest standard of quality.
+            </p>
+            <p>
+              At MLF Professional Services, we don't just clean — we elevate your space. Our goal is to provide a seamless, stress‑free experience that leaves your home or business looking immaculate and feeling refreshed, every time.
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
 
