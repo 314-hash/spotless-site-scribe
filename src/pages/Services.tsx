@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus } from "lucide-react";
+import cleaningHome from "@/assets/cleaning-home.webp";
+import cleaningCafe from "@/assets/cleaning-cafe.webp";
+import cleaningVacuum from "@/assets/cleaning-vacuum.webp";
+import cleaningTeam from "@/assets/cleaning-team.webp";
 
 const services = [
   {
@@ -8,30 +12,35 @@ const services = [
     title: "Regular House Cleaning",
     description:
       "Weekly, fortnightly, or monthly cleaning designed to keep your home fresh and organised. Includes dusting, vacuuming, mopping, bathrooms, kitchen surfaces, and general tidy‑up.",
+    image: cleaningHome,
   },
   {
     icon: Sparkles,
     title: "Deep Cleaning",
     description:
       "A top‑to‑bottom refresh for your entire home. Ideal for spring cleaning, post‑renovation, or preparing for guests.",
+    image: cleaningVacuum,
   },
   {
     icon: Key,
     title: "End‑of‑Lease Cleaning",
     description:
       "Real‑estate approved bond cleaning with a satisfaction guarantee. Includes kitchens, bathrooms, walls, skirting boards, windows, appliances, and more.",
+    image: cleaningCafe,
   },
   {
     icon: Bed,
     title: "Airbnb / Short‑Stay Cleaning",
     description:
       "Fast, reliable turnovers with linen change, restocking, and presentation‑ready setups for hosts.",
+    image: cleaningTeam,
   },
   {
     icon: Building,
     title: "Office Cleaning",
     description:
       "Professional and consistent cleaning for small to medium workplaces across Western Sydney. A clean workspace boosts productivity, supports staff wellbeing, and creates a strong first impression.",
+    image: cleaningCafe,
   },
 ];
 
@@ -83,7 +92,7 @@ const Services = () => (
 
     {/* Service cards */}
     <section className="py-24 px-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto space-y-8">
         {services.map((s, i) => (
           <motion.div
             key={s.title}
@@ -92,11 +101,16 @@ const Services = () => (
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="bg-card border border-border rounded-lg p-8 hover:border-primary/50 transition-colors"
+            className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors`}
           >
-            <s.icon className="text-primary mb-4" size={32} />
-            <h3 className="font-heading text-xl font-semibold mb-3">{s.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
+            <div className="md:w-2/5 h-64 md:h-auto">
+              <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
+            </div>
+            <div className="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+              <s.icon className="text-primary mb-4" size={32} />
+              <h3 className="font-heading text-2xl font-semibold mb-3">{s.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
+            </div>
           </motion.div>
         ))}
       </div>
