@@ -5,6 +5,7 @@ import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
 import cleaningVacuum from "@/assets/cleaning-vacuum.webp";
 import cleaningTeam from "@/assets/cleaning-team.webp";
+import cleaningOffice from "@/assets/cleaning-office.webp";
 
 const services = [
   {
