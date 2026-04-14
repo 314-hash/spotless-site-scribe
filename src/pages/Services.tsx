@@ -146,6 +146,15 @@ const Services = () => (
             </ul>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 max-w-5xl mx-auto rounded-lg overflow-hidden border border-border"
+        >
+          <img src={officeCollage} alt="Office cleaning services overview" className="w-full h-auto" />
+        </motion.div>
       </div>
     </section>
 
