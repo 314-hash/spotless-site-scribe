@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-secondary border-t border-border">
@@ -39,6 +39,9 @@ const Footer = () => (
             <div className="flex items-center gap-2">
               <MapPin size={14} /> Metropolitan Sydney
             </div>
+            <a href="https://wa.me/61433142450" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#25D366] transition-colors">
+              <MessageCircle size={14} /> WhatsApp: +61 433 142 450
+            </a>
           </div>
         </div>
       </div>
