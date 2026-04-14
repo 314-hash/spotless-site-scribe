@@ -7,6 +7,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -56,8 +58,7 @@ const App = () => {
           <source src={mlfSong} type="audio/mpeg" />
         </audio>
 
-        {/* Optional dark background */}
-        <div className="fixed inset-0 bg-black -z-10" />
+        <AnimatedBackground />
 
         <Toaster />
         <Sonner />
@@ -74,6 +75,7 @@ const App = () => {
           </Routes>
 
           <Footer />
+          <WhatsAppButton />
         </BrowserRouter>
 
       </TooltipProvider>
