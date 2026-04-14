@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus } from "lucide-react";
+import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
 import cleaningVacuum from "@/assets/cleaning-vacuum.webp";
@@ -145,6 +146,15 @@ const Services = () => (
             </ul>
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 max-w-5xl mx-auto rounded-lg overflow-hidden border border-border"
+        >
+          <img src={officeCollage} alt="Office cleaning services overview" className="w-full h-auto" />
+        </motion.div>
       </div>
     </section>
 
