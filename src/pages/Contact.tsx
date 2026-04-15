@@ -168,6 +168,37 @@ const Contact = () => {
           </motion.form>
         </div>
       </section>
+
+      {/* Map */}
+      <section className="pb-24 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="font-heading text-2xl font-bold mb-6 text-center">
+            Our <span className="text-gradient-gold">Location</span>
+          </h2>
+          <div className="rounded-lg overflow-hidden border border-border aspect-video">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.10282287!2d150.65178895!3d-33.847927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="MLF Professional Services Location"
+            />
+          </div>
+          <p className="text-center mt-4">
+            <a
+              href="https://maps.app.goo.gl/JaKdA9wBWdKq2FTc7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:underline"
+            >
+              View on Google Maps →
+            </a>
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
