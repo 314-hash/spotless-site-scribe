@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import HouseCleaningSydney from "./pages/HouseCleaningSydney";
 import NotFound from "./pages/NotFound";
 
 // 🎵 Import your music
@@ -52,34 +53,37 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        
-        {/* 🎵 Audio Element */}
-        <audio ref={audioRef} loop preload="auto">
-          <source src={mlfSong} type="audio/mpeg" />
-        </audio>
+      <HelmetProvider>
+        <TooltipProvider>
+          
+          {/* 🎵 Audio Element */}
+          <audio ref={audioRef} loop preload="auto">
+            <source src={mlfSong} type="audio/mpeg" />
+          </audio>
 
-        <AnimatedBackground />
+          <AnimatedBackground />
 
-        <Toaster />
-        <Sonner />
+          <Toaster />
+          <Sonner />
 
-        <BrowserRouter>
-          <Navbar />
+          <BrowserRouter>
+            <Navbar />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/house-cleaning-sydney" element={<HouseCleaningSydney />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
 
-          <Footer />
-          <WhatsAppButton />
-        </BrowserRouter>
+            <Footer />
+            <WhatsAppButton />
+          </BrowserRouter>
 
-      </TooltipProvider>
+        </TooltipProvider>
+      </HelmetProvider>
     </QueryClientProvider>
   );
 };
