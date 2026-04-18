@@ -7,6 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Services", path: "/services" },
+  { label: "House Cleaning Sydney", path: "/house-cleaning-sydney" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];

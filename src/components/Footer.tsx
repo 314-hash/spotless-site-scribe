@@ -18,6 +18,7 @@ const Footer = () => (
             {[
               { label: "Home", path: "/" },
               { label: "Services", path: "/services" },
+              { label: "House Cleaning Sydney", path: "/house-cleaning-sydney" },
               { label: "About Us", path: "/about" },
               { label: "Contact", path: "/contact" },
             ].map((link) => (
