@@ -21,6 +21,8 @@ const Footer = () => (
               { label: "House Cleaning Sydney", path: "/house-cleaning-sydney" },
               { label: "Western Sydney Cleaning", path: "/western-sydney-house-cleaning" },
               { label: "Find Reliable Cleaners", path: "/how-to-find-reliable-cleaners-western-sydney" },
+              { label: "Cleaning Cost Guide", path: "/house-cleaning-cost-sydney" },
+              { label: "End of Lease Checklist", path: "/end-of-lease-cleaning-checklist-sydney" },
               { label: "About Us", path: "/about" },
               { label: "Contact", path: "/contact" },
             ].map((link) => (
