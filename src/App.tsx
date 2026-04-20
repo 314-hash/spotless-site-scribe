@@ -17,6 +17,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import HouseCleaningSydney from "./pages/HouseCleaningSydney";
 import WesternSydneyHouseCleaning from "./pages/WesternSydneyHouseCleaning";
+import FindReliableCleanersWesternSydney from "./pages/FindReliableCleanersWesternSydney";
 import NotFound from "./pages/NotFound";
 
 import { MusicProvider, useMusic } from "@/contexts/MusicContext";
@@ -81,6 +82,10 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/house-cleaning-sydney" element={<HouseCleaningSydney />} />
                 <Route path="/western-sydney-house-cleaning" element={<WesternSydneyHouseCleaning />} />
+                <Route
+                  path="/how-to-find-reliable-cleaners-western-sydney"
+                  element={<FindReliableCleanersWesternSydney />}
+                />
                 <Route path="*" element={<NotFound />} />
               </Routes>
 
