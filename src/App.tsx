@@ -18,6 +18,8 @@ import Contact from "./pages/Contact";
 import HouseCleaningSydney from "./pages/HouseCleaningSydney";
 import WesternSydneyHouseCleaning from "./pages/WesternSydneyHouseCleaning";
 import FindReliableCleanersWesternSydney from "./pages/FindReliableCleanersWesternSydney";
+import HouseCleaningCostSydney from "./pages/HouseCleaningCostSydney";
+import EndOfLeaseCleaningChecklistSydney from "./pages/EndOfLeaseCleaningChecklistSydney";
 import NotFound from "./pages/NotFound";
 
 import { MusicProvider, useMusic } from "@/contexts/MusicContext";
@@ -85,6 +87,11 @@ const App = () => {
                 <Route
                   path="/how-to-find-reliable-cleaners-western-sydney"
                   element={<FindReliableCleanersWesternSydney />}
+                />
+                <Route path="/house-cleaning-cost-sydney" element={<HouseCleaningCostSydney />} />
+                <Route
+                  path="/end-of-lease-cleaning-checklist-sydney"
+                  element={<EndOfLeaseCleaningChecklistSydney />}
                 />
                 <Route path="*" element={<NotFound />} />
               </Routes>
