@@ -96,7 +96,7 @@ const WesternSydneyHouseCleaning = () => {
   return (
     <div className="pt-20">
       <Helmet>
-        <title>Western Sydney House Cleaning | Reliable Local Cleaners | MLF Professional Services</title>
+        <title>Western Sydney House Cleaning | MLF Services</title>
         <meta
           name="description"
           content="Professional house cleaning in Western Sydney. Reliable, affordable, and same-day cleaning available. Book your local cleaners today."
