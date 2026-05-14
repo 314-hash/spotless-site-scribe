@@ -129,6 +129,14 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Contact MLF Professional Services | Free Quote</title>
+        <meta name="description" content="Contact MLF Professional Services for a free Sydney cleaning quote. Call 1300 038 243 or request a quote online — we reply within 24 hours." />
+        <link rel="canonical" href="https://spotless-site-scribe.lovable.app/contact" />
+        <meta property="og:title" content="Contact MLF Professional Services | Free Quote" />
+        <meta property="og:description" content="Contact MLF Professional Services for a free Sydney cleaning quote. We reply within 24 hours." />
+        <meta property="og:url" content="https://spotless-site-scribe.lovable.app/contact" />
+      </Helmet>
       {/* Hero */}
       <section className="py-24 px-4 bg-secondary">
         <div className="container mx-auto text-center">
