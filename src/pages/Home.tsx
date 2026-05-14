@@ -13,6 +13,14 @@ const highlights = [
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>MLF Professional Services — Premium Cleaning in Sydney</title>
+        <meta name="description" content="Premium home, office, and end-of-lease cleaning across Metropolitan Sydney. Fully insured, reliable, and eco-friendly. Get a free quote today." />
+        <link rel="canonical" href="https://spotless-site-scribe.lovable.app/" />
+        <meta property="og:title" content="MLF Professional Services — Premium Cleaning in Sydney" />
+        <meta property="og:description" content="Premium home, office, and end-of-lease cleaning across Metropolitan Sydney. Get a free quote today." />
+        <meta property="og:url" content="https://spotless-site-scribe.lovable.app/" />
+      </Helmet>
       {/* Hero with video background */}
       <section className="relative h-screen w-full overflow-hidden">
         <video
