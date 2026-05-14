@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus } from "lucide-react";
 import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
