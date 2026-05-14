@@ -81,6 +81,14 @@ const fadeUp = {
 
 const Services = () => (
   <div className="pt-20">
+    <Helmet>
+      <title>Cleaning Services Sydney | MLF Professional Services</title>
+      <meta name="description" content="Explore our residential, deep, end-of-lease, Airbnb, and office cleaning services across Sydney. Tailored, reliable, and fully insured." />
+      <link rel="canonical" href="https://spotless-site-scribe.lovable.app/services" />
+      <meta property="og:title" content="Cleaning Services Sydney | MLF Professional Services" />
+      <meta property="og:description" content="Residential, deep, end-of-lease, Airbnb, and office cleaning services across Sydney." />
+      <meta property="og:url" content="https://spotless-site-scribe.lovable.app/services" />
+    </Helmet>
     {/* Header */}
     <section className="py-24 px-4 bg-secondary">
       <div className="container mx-auto text-center">
