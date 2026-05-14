@@ -98,7 +98,7 @@ const HouseCleaningCostSydney = () => {
   return (
     <div className="pt-20">
       <Helmet>
-        <title>How Much Does House Cleaning Cost in Sydney? | 2025 Pricing Guide</title>
+        <title>House Cleaning Cost in Sydney | 2025 Pricing Guide</title>
         <meta
           name="description"
           content="Find out how much house cleaning costs in Sydney. Average prices, what affects pricing, and tips to save on regular and deep cleaning services."
