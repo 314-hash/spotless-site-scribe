@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Phone, Mail, MapPin, Clock, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
