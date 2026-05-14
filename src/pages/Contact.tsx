@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Phone, Mail, MapPin, Clock, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -128,6 +129,14 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Contact MLF Professional Services | Free Quote</title>
+        <meta name="description" content="Contact MLF Professional Services for a free Sydney cleaning quote. Call 1300 038 243 or request a quote online — we reply within 24 hours." />
+        <link rel="canonical" href="https://spotless-site-scribe.lovable.app/contact" />
+        <meta property="og:title" content="Contact MLF Professional Services | Free Quote" />
+        <meta property="og:description" content="Contact MLF Professional Services for a free Sydney cleaning quote. We reply within 24 hours." />
+        <meta property="og:url" content="https://spotless-site-scribe.lovable.app/contact" />
+      </Helmet>
       {/* Hero */}
       <section className="py-24 px-4 bg-secondary">
         <div className="container mx-auto text-center">
@@ -211,10 +220,11 @@ const Contact = () => {
             {/* Name */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className={labelClasses}>
+                <label htmlFor="firstName" className={labelClasses}>
                   First Name <span className="text-primary">*</span>
                 </label>
                 <input
+                  id="firstName"
                   required
                   value={form.firstName}
                   onChange={(e) =>
@@ -224,10 +234,11 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className={labelClasses}>
+                <label htmlFor="lastName" className={labelClasses}>
                   Last Name <span className="text-primary">*</span>
                 </label>
                 <input
+                  id="lastName"
                   required
                   value={form.lastName}
                   onChange={(e) =>
@@ -241,10 +252,11 @@ const Contact = () => {
             {/* Email & Phone */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className={labelClasses}>
+                <label htmlFor="email" className={labelClasses}>
                   Email <span className="text-primary">*</span>
                 </label>
                 <input
+                  id="email"
                   type="email"
                   required
                   value={form.email}
@@ -255,8 +267,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className={labelClasses}>Phone Number</label>
+                <label htmlFor="phone" className={labelClasses}>Phone Number</label>
                 <input
+                  id="phone"
                   type="tel"
                   value={form.phone}
                   onChange={(e) =>
@@ -271,10 +284,11 @@ const Contact = () => {
             {/* Service & Property */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className={labelClasses}>
+                <label htmlFor="serviceType" className={labelClasses}>
                   Service Type <span className="text-primary">*</span>
                 </label>
                 <select
+                  id="serviceType"
                   required
                   value={form.serviceType}
                   onChange={(e) =>
@@ -291,8 +305,9 @@ const Contact = () => {
                 </select>
               </div>
               <div>
-                <label className={labelClasses}>Property Type</label>
+                <label htmlFor="propertyType" className={labelClasses}>Property Type</label>
                 <select
+                  id="propertyType"
                   value={form.propertyType}
                   onChange={(e) =>
                     setForm({ ...form, propertyType: e.target.value })
@@ -312,8 +327,9 @@ const Contact = () => {
             {/* Size & Date */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className={labelClasses}>Property Size</label>
+                <label htmlFor="propertySize" className={labelClasses}>Property Size</label>
                 <input
+                  id="propertySize"
                   value={form.propertySize}
                   onChange={(e) =>
                     setForm({ ...form, propertySize: e.target.value })
@@ -323,8 +339,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className={labelClasses}>Preferred Date/Time</label>
+                <label htmlFor="preferredDate" className={labelClasses}>Preferred Date/Time</label>
                 <input
+                  id="preferredDate"
                   type="date"
                   value={form.preferredDate}
                   onChange={(e) =>
@@ -337,8 +354,9 @@ const Contact = () => {
 
             {/* Frequency */}
             <div>
-              <label className={labelClasses}>Frequency</label>
+              <label htmlFor="frequency" className={labelClasses}>Frequency</label>
               <select
+                id="frequency"
                 value={form.frequency}
                 onChange={(e) =>
                   setForm({ ...form, frequency: e.target.value })
@@ -356,8 +374,9 @@ const Contact = () => {
 
             {/* Address */}
             <div>
-              <label className={labelClasses}>Address</label>
+              <label htmlFor="address" className={labelClasses}>Address</label>
               <input
+                id="address"
                 value={form.address}
                 onChange={(e) =>
                   setForm({ ...form, address: e.target.value })
@@ -369,8 +388,9 @@ const Contact = () => {
 
             {/* Message */}
             <div>
-              <label className={labelClasses}>Additional Notes</label>
+              <label htmlFor="message" className={labelClasses}>Additional Notes</label>
               <textarea
+                id="message"
                 rows={4}
                 value={form.message}
                 onChange={(e) =>
@@ -382,8 +402,9 @@ const Contact = () => {
             </div>
 
             {/* Newsletter */}
-            <label className="flex items-center gap-2 text-sm text-foreground/70 cursor-pointer">
+            <label htmlFor="newsletter" className="flex items-center gap-2 text-sm text-foreground/70 cursor-pointer">
               <input
+                id="newsletter"
                 type="checkbox"
                 checked={form.newsletter}
                 onChange={(e) =>

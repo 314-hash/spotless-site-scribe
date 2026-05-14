@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus } from "lucide-react";
 import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
@@ -80,6 +81,14 @@ const fadeUp = {
 
 const Services = () => (
   <div className="pt-20">
+    <Helmet>
+      <title>Cleaning Services Sydney | MLF Professional Services</title>
+      <meta name="description" content="Explore our residential, deep, end-of-lease, Airbnb, and office cleaning services across Sydney. Tailored, reliable, and fully insured." />
+      <link rel="canonical" href="https://spotless-site-scribe.lovable.app/services" />
+      <meta property="og:title" content="Cleaning Services Sydney | MLF Professional Services" />
+      <meta property="og:description" content="Residential, deep, end-of-lease, Airbnb, and office cleaning services across Sydney." />
+      <meta property="og:url" content="https://spotless-site-scribe.lovable.app/services" />
+    </Helmet>
     {/* Header */}
     <section className="py-24 px-4 bg-secondary">
       <div className="container mx-auto text-center">
@@ -110,7 +119,7 @@ const Services = () => (
             </div>
             <div className="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
               <s.icon className="text-primary mb-4" size={32} />
-              <h3 className="font-heading text-2xl font-semibold mb-3">{s.title}</h3>
+              <h2 className="font-heading text-2xl font-semibold mb-3">{s.title}</h2>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
             </div>
           </motion.div>

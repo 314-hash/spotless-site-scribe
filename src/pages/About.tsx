@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Shield, Star, Leaf, DollarSign, Clock, CheckCircle, Award } from "lucide-react";
 import ownerImage from "@/assets/mlf3.png";
 
@@ -14,6 +15,14 @@ const values = [
 
 const About = () => (
   <div className="pt-20">
+    <Helmet>
+      <title>About MLF Professional Services | Sydney Cleaners</title>
+      <meta name="description" content="Meet MLF Professional Services — trusted Sydney cleaners delivering premium residential, commercial, and end-of-lease cleaning with care and precision." />
+      <link rel="canonical" href="https://spotless-site-scribe.lovable.app/about" />
+      <meta property="og:title" content="About MLF Professional Services | Sydney Cleaners" />
+      <meta property="og:description" content="Trusted Sydney cleaners delivering premium residential, commercial, and end-of-lease cleaning." />
+      <meta property="og:url" content="https://spotless-site-scribe.lovable.app/about" />
+    </Helmet>
     <section className="py-24 px-4 bg-secondary">
       <div className="container mx-auto text-center">
         <h1 className="font-heading text-4xl md:text-6xl font-bold mb-4">
