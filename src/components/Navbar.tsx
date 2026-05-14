@@ -48,7 +48,12 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <div className="flex items-center gap-3 md:hidden">
           <ThemeToggle />
-          <button onClick={() => setOpen(!open)} className="text-foreground">
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-foreground"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
