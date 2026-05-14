@@ -119,7 +119,7 @@ const Services = () => (
             </div>
             <div className="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
               <s.icon className="text-primary mb-4" size={32} />
-              <h3 className="font-heading text-2xl font-semibold mb-3">{s.title}</h3>
+              <h2 className="font-heading text-2xl font-semibold mb-3">{s.title}</h2>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
             </div>
           </motion.div>
