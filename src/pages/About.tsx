@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Shield, Star, Leaf, DollarSign, Clock, CheckCircle, Award } from "lucide-react";
-import ownerImage from "@/assets/mlf3.png";
+import ownerImage from "@/assets/mlf-team.jpeg";
 
 const values = [
   { icon: Shield, label: "Fully insured and ABN registered" },
