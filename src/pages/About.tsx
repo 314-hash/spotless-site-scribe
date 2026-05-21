@@ -46,7 +46,7 @@ const About = () => (
             className="md:w-2/5 shrink-0"
           >
             <div className="relative rounded-lg overflow-hidden shadow-gold">
-              <img src={ownerImage} alt="MLF Professional Services founder" className="w-full h-auto object-cover" />
+              <img src={ownerImage} alt="MLF Professional Services cleaning team in Western Sydney" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
             </div>
           </motion.div>
