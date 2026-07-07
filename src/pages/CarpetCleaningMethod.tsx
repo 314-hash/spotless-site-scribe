@@ -20,7 +20,6 @@ import {
   Search,
   Flame,
   SprayCan,
-  Brush,
   Clock,
 } from "lucide-react";
 import commercialVideo from "@/assets/commercial-steam-transit.mp4.asset.json";
