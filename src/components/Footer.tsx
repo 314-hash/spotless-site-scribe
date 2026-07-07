@@ -23,6 +23,7 @@ const Footer = () => (
               { label: "Find Reliable Cleaners", path: "/how-to-find-reliable-cleaners-western-sydney" },
               { label: "Cleaning Cost Guide", path: "/house-cleaning-cost-sydney" },
               { label: "End of Lease Checklist", path: "/end-of-lease-cleaning-checklist-sydney" },
+              { label: "Deep Steam Carpet Cleaning", path: "/deep-steam-carpet-cleaning-sydney" },
               { label: "About Us", path: "/about" },
               { label: "Contact", path: "/contact" },
             ].map((link) => (
