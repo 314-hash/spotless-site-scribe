@@ -45,6 +45,13 @@ const services = [
       "Professional and consistent cleaning for small to medium workplaces across Western Sydney. A clean workspace boosts productivity, supports staff wellbeing, and creates a strong first impression.",
     image: cleaningOffice,
   },
+  {
+    icon: Droplets,
+    title: "Deep Steam Carpet Cleaning",
+    description:
+      "Our new advanced hot water extraction method powered by the Polivac Terminator Plus. Removes deep-seated dirt, stains, allergens, and odours from carpets in homes and commercial properties across Sydney.",
+    image: cleaningVacuum,
+  },
 ];
 
 const officeIncludes = [
