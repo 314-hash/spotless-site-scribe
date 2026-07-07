@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus } from "lucide-react";
+import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus, Droplets } from "lucide-react";
 import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
@@ -45,6 +45,13 @@ const services = [
       "Professional and consistent cleaning for small to medium workplaces across Western Sydney. A clean workspace boosts productivity, supports staff wellbeing, and creates a strong first impression.",
     image: cleaningOffice,
   },
+  {
+    icon: Droplets,
+    title: "Deep Steam Carpet Cleaning",
+    description:
+      "Our new advanced hot water extraction method powered by the Polivac Terminator Plus. Removes deep-seated dirt, stains, allergens, and odours from carpets in homes and commercial properties across Sydney.",
+    image: cleaningVacuum,
+  },
 ];
 
 const officeIncludes = [
@@ -60,7 +67,7 @@ const officeIncludes = [
 
 const officeAddOns = [
   "Deep office sanitisation",
-  "Carpet steam cleaning",
+  "Carpet protection treatment",
   "Fridge and microwave cleaning",
   "Meeting room reset and presentation setup",
 ];
