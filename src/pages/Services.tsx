@@ -67,7 +67,7 @@ const officeIncludes = [
 
 const officeAddOns = [
   "Deep office sanitisation",
-  "Carpet steam cleaning",
+  "Carpet protection treatment",
   "Fridge and microwave cleaning",
   "Meeting room reset and presentation setup",
 ];
