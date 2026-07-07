@@ -20,6 +20,7 @@ import WesternSydneyHouseCleaning from "./pages/WesternSydneyHouseCleaning";
 import FindReliableCleanersWesternSydney from "./pages/FindReliableCleanersWesternSydney";
 import HouseCleaningCostSydney from "./pages/HouseCleaningCostSydney";
 import EndOfLeaseCleaningChecklistSydney from "./pages/EndOfLeaseCleaningChecklistSydney";
+import NotFound from "./pages/NotFound";
 import CarpetCleaningMethod from "./pages/CarpetCleaningMethod";
 
 import { MusicProvider, useMusic } from "@/contexts/MusicContext";
