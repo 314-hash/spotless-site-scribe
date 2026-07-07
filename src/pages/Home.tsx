@@ -83,6 +83,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* New carpet cleaning promo */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="bg-card border border-border rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6 hover:border-primary/50 transition-colors">
+            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+              <Droplets className="text-primary" size={32} />
+            </div>
+            <div className="flex-1">
+              <span className="text-xs uppercase tracking-widest text-primary font-semibold">New Service</span>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">
+                Deep Steam <span className="text-gradient-gold">Carpet Cleaning</span>
+              </h2>
+              <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
+                Introducing our advanced hot water extraction method powered by the Polivac Terminator Plus.
+                Removes deep-seated dirt, allergens, stains, and odours from carpets in homes and businesses across Sydney.
+              </p>
+            </div>
+            <Link
+              to="/deep-steam-carpet-cleaning-sydney"
+              className="flex-shrink-0 bg-gold-gradient text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+            >
+              Learn More <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services preview */}
       <section className="py-24 px-4">
         <div className="container mx-auto text-center">
