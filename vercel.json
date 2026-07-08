@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/__l5e/:path*",
+      "destination": "https://spotless-site-scribe.lovable.app/__l5e/:path*"
+    },
+    {
+      "source": "/((?!assets/|__l5e/|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
