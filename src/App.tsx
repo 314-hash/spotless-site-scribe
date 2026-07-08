@@ -22,6 +22,7 @@ import HouseCleaningCostSydney from "./pages/HouseCleaningCostSydney";
 import EndOfLeaseCleaningChecklistSydney from "./pages/EndOfLeaseCleaningChecklistSydney";
 import NotFound from "./pages/NotFound";
 import CarpetCleaningMethod from "./pages/CarpetCleaningMethod";
+import AirportTransfersSydney from "./pages/AirportTransfersSydney";
 
 import { MusicProvider, useMusic } from "@/contexts/MusicContext";
 
@@ -95,6 +96,7 @@ const App = () => {
                   element={<EndOfLeaseCleaningChecklistSydney />}
                 />
                 <Route path="/deep-steam-carpet-cleaning-sydney" element={<CarpetCleaningMethod />} />
+                <Route path="/airport-transfers-sydney" element={<AirportTransfersSydney />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
 
