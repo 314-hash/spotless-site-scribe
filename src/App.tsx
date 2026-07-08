@@ -22,6 +22,7 @@ import HouseCleaningCostSydney from "./pages/HouseCleaningCostSydney";
 import EndOfLeaseCleaningChecklistSydney from "./pages/EndOfLeaseCleaningChecklistSydney";
 import NotFound from "./pages/NotFound";
 import CarpetCleaningMethod from "./pages/CarpetCleaningMethod";
+import AirportTransfersSydney from "./pages/AirportTransfersSydney";
 
 import { MusicProvider, useMusic } from "@/contexts/MusicContext";
 
