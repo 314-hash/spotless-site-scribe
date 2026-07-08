@@ -23,6 +23,9 @@ import {
   Clock,
 } from "lucide-react";
 import commercialVideo from "@/assets/commercial-steam-transit.mp4.asset.json";
+import terminatorImage from "@/assets/terminator-plus.jpeg.asset.json";
+import mlfServiceVideo from "@/assets/mlf-cleaning-service.mp4.asset.json";
+import newMethodVideo from "@/assets/new-cleaning-method.mp4.asset.json";
 
 const benefits = [
   {
@@ -257,6 +260,70 @@ const CarpetCleaningMethod = () => {
           </div>
         </div>
       </section>
+
+      {/* Terminator Plus Showcase */}
+      <section className="py-24 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary mb-3">
+              <Sparkles size={14} /> Powered By
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+              The <span className="text-gradient-gold">Polivac Terminator Plus</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Commercial-grade deep steam cleaning machine — built for professionals, engineered for results.
+            </p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="rounded-2xl overflow-hidden border border-border shadow-2xl"
+          >
+            <img
+              src={terminatorImage.url}
+              alt="Polivac Terminator Plus professional deep steam carpet cleaning machine used by MLF Professional Services"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Video Showcase */}
+      <section className="py-24 px-4 bg-secondary">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+              See The <span className="text-gradient-gold">Method In Action</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Watch our new Deep Steam Carpet Cleaning process delivering professional results.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="rounded-xl overflow-hidden border border-border bg-card">
+              <video controls playsInline preload="metadata" className="w-full h-auto">
+                <source src={newMethodVideo.url} type="video/mp4" />
+              </video>
+              <div className="p-4">
+                <h3 className="font-heading font-semibold">Introducing Our New Cleaning Method</h3>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border bg-card">
+              <video controls playsInline preload="metadata" className="w-full h-auto">
+                <source src={mlfServiceVideo.url} type="video/mp4" />
+              </video>
+              <div className="p-4">
+                <h3 className="font-heading font-semibold">MLF Professional Cleaning Services</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Ideal For */}
       <section className="py-24 px-4 bg-secondary">
