@@ -96,6 +96,7 @@ const App = () => {
                   element={<EndOfLeaseCleaningChecklistSydney />}
                 />
                 <Route path="/deep-steam-carpet-cleaning-sydney" element={<CarpetCleaningMethod />} />
+                <Route path="/airport-transfers-sydney" element={<AirportTransfersSydney />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
 
