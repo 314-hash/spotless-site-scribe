@@ -23,6 +23,9 @@ import {
   Clock,
 } from "lucide-react";
 import commercialVideo from "@/assets/commercial-steam-transit.mp4.asset.json";
+import terminatorImage from "@/assets/terminator-plus.jpeg.asset.json";
+import mlfServiceVideo from "@/assets/mlf-cleaning-service.mp4.asset.json";
+import newMethodVideo from "@/assets/new-cleaning-method.mp4.asset.json";
 
 const benefits = [
   {
