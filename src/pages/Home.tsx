@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Shield, Star, Clock, Sparkles, Droplets } from "lucide-react";
+import { ArrowRight, Shield, Star, Clock, Sparkles, Droplets, Plane } from "lucide-react";
+import airportImage from "@/assets/airport-transfers-hero.jpg.asset.json";
 
 const highlights = [
   { icon: Shield, label: "Fully Insured" },
@@ -106,6 +107,40 @@ const Home = () => {
             >
               Learn More <ArrowRight size={16} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* New Airport Transfers promo */}
+      <section className="py-16 px-4 bg-secondary">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-8 items-center bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors">
+            <div className="w-full h-full">
+              <img
+                src={airportImage.url}
+                alt="MLF Airport Transfers Sydney — 24/7 Metro Service"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-8 md:p-10">
+              <div className="flex items-center gap-2 mb-3">
+                <Plane className="text-primary" size={20} />
+                <span className="text-xs uppercase tracking-widest text-primary font-semibold">New Service</span>
+              </div>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-3">
+                Airport Transfers <span className="text-gradient-gold">Available</span>
+              </h2>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                Sydney Metro • 24/7 Service • Reliable and comfortable pickups and drop-offs to and from Sydney Airport.
+              </p>
+              <Link
+                to="/airport-transfers-sydney"
+                className="bg-gold-gradient text-primary-foreground px-6 py-3 rounded-md font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+              >
+                Learn More <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Plane, MapPin, Clock, ShieldCheck, Phone, ArrowRight, CheckCircle2, Car } from "lucide-react";
-import airportImage from "@/assets/airport-transfers.png.asset.json";
+import airportImage from "@/assets/airport-transfers-hero.jpg.asset.json";
 
 const features = [
   { icon: Plane, title: "Airport Pickup & Drop-off", desc: "Reliable transfers to and from Sydney Airport, day or night." },
