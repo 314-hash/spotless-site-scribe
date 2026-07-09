@@ -6,7 +6,7 @@ import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
 import deepCleaningTerminator from "@/assets/deep-cleaning-terminator.jpg.asset.json";
-import cleaningVacuum from "@/assets/cleaning-vacuum.webp";
+import deepSteamCarpetBanner from "@/assets/deep-steam-carpet-banner.jpg.asset.json";
 import cleaningTeam from "@/assets/cleaning-team.webp";
 import cleaningOffice from "@/assets/cleaning-office.webp";
 
