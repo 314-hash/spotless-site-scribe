@@ -51,7 +51,7 @@ const services = [
     title: "Deep Steam Carpet Cleaning",
     description:
       "Our new advanced hot water extraction method powered by the Polivac Terminator Plus. Removes deep-seated dirt, stains, allergens, and odours from carpets in homes and commercial properties across Sydney.",
-    image: cleaningVacuum,
+    image: deepSteamCarpetBanner.url,
   },
 ];
 
