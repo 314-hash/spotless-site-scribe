@@ -5,6 +5,7 @@ import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus, Droplets } from "
 import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
+import deepCleaningTerminator from "@/assets/deep-cleaning-terminator.jpg.asset.json";
 import cleaningVacuum from "@/assets/cleaning-vacuum.webp";
 import cleaningTeam from "@/assets/cleaning-team.webp";
 import cleaningOffice from "@/assets/cleaning-office.webp";
@@ -22,7 +23,7 @@ const services = [
     title: "Deep Cleaning",
     description:
       "A top‑to‑bottom refresh for your entire home. Ideal for spring cleaning, post‑renovation, or preparing for guests.",
-    image: cleaningVacuum,
+    image: deepCleaningTerminator.url,
   },
   {
     icon: Key,
