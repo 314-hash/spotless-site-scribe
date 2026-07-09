@@ -23,7 +23,7 @@ const services = [
     title: "Deep Cleaning",
     description:
       "A top‑to‑bottom refresh for your entire home. Ideal for spring cleaning, post‑renovation, or preparing for guests.",
-    image: cleaningVacuum,
+    image: deepCleaningTerminator.url,
   },
   {
     icon: Key,
