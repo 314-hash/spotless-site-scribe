@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus, Droplets } from "lucide-react";
+import { ArrowRight, Home, Sparkles, Key, Building, Bed, Plus, Droplets, Plane } from "lucide-react";
 import officeCollage from "@/assets/office-cleaning-collage.png";
 import cleaningHome from "@/assets/cleaning-home.webp";
 import cleaningCafe from "@/assets/cleaning-cafe.webp";
 import deepCleaningTerminator from "@/assets/deep-cleaning-terminator.jpg.asset.json";
 import deepSteamCarpetBanner from "@/assets/deep-steam-carpet-banner.jpg.asset.json";
+import airportImage from "@/assets/airport-transfers-hero.jpg.asset.json";
 import cleaningTeam from "@/assets/cleaning-team.webp";
 import cleaningOffice from "@/assets/cleaning-office.webp";
 
