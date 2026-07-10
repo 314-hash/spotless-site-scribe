@@ -54,6 +54,13 @@ const services = [
       "Our new advanced hot water extraction method powered by the Polivac Terminator Plus. Removes deep-seated dirt, stains, allergens, and odours from carpets in homes and commercial properties across Sydney.",
     image: deepSteamCarpetBanner.url,
   },
+  {
+    icon: Plane,
+    title: "Airport Transfers Sydney",
+    description:
+      "Sydney Metro 24/7 airport transfer service. Reliable and comfortable pickups and drop-offs to and from Sydney Airport.",
+    image: airportImage.url,
+  },
 ];
 
 const officeIncludes = [
