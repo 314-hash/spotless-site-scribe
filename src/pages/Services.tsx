@@ -110,6 +110,62 @@ const Services = () => (
       </div>
     </section>
 
+    {/* New Services highlights */}
+    <section className="py-16 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <span className="text-xs uppercase tracking-widest text-primary font-semibold">New</span>
+          <h2 className="font-heading text-3xl font-bold mt-2">
+            Recently Added <span className="text-gradient-gold">Services</span>
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors flex flex-col">
+            <div className="h-56">
+              <img src={deepSteamCarpetBanner.url} alt="Deep Steam Carpet Cleaning Sydney" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-2 mb-3">
+                <Droplets className="text-primary" size={20} />
+                <span className="text-xs uppercase tracking-widest text-primary font-semibold">New Service</span>
+              </div>
+              <h3 className="font-heading text-xl font-semibold mb-2">Deep Steam Carpet Cleaning</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-4">
+                Advanced hot water extraction powered by the Polivac Terminator Plus. Removes deep-seated dirt, stains, allergens, and odours from carpets in homes and businesses across Sydney.
+              </p>
+              <Link
+                to="/deep-steam-carpet-cleaning-sydney"
+                className="bg-gold-gradient text-primary-foreground px-5 py-2.5 rounded-md font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity inline-flex items-center gap-2 w-fit"
+              >
+                Learn More <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+          <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors flex flex-col">
+            <div className="h-56">
+              <img src={airportImage.url} alt="Airport Transfers Sydney" className="w-full h-full object-cover" />
+            </div>
+            <div className="p-6 flex-1 flex flex-col">
+              <div className="flex items-center gap-2 mb-3">
+                <Plane className="text-primary" size={20} />
+                <span className="text-xs uppercase tracking-widest text-primary font-semibold">New Service</span>
+              </div>
+              <h3 className="font-heading text-xl font-semibold mb-2">Airport Transfers Sydney</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-4">
+                Sydney Metro • 24/7 Service • Reliable and comfortable pickups and drop-offs to and from Sydney Airport.
+              </p>
+              <Link
+                to="/airport-transfers-sydney"
+                className="bg-gold-gradient text-primary-foreground px-5 py-2.5 rounded-md font-semibold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity inline-flex items-center gap-2 w-fit"
+              >
+                Learn More <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* Service cards */}
     <section className="py-24 px-4">
       <div className="container mx-auto space-y-8">
